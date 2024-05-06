@@ -7,6 +7,8 @@ __pycache__/
 *.csv
 
 /model
+/indexers
+
 
 # C extensions
 *.so

@@ -13,6 +13,7 @@ class DataGenerator:
         
     def generateTransactions(self):
         num = random.randint(1, 10)
+        num = 1
         messages = self.df[self.index: self.index + num].to_dict(orient='records')
         self.index += num
         return messages
@@ -21,7 +22,6 @@ class DataGenerator:
 class MyListener:
     topic_name = 'transaction_data'
     def __init__(self):
-        # self.producerObj = Producer()
         self.producer = KafkaProducer(
             bootstrap_servers=['localhost:9092'],
             client_id="test-producer",
@@ -56,6 +56,7 @@ class MyListener:
     def __del__(self):
         self.producer.close()
 
+print("Starting app...")
 dataGenerator=DataGenerator()
 myListener=MyListener()
 
