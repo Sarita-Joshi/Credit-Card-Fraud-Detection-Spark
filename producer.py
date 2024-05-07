@@ -9,11 +9,12 @@ class DataGenerator:
     index = 0
     def __init__(self):
         # read from csv
-        self.df = pd.read_csv('./data/fraudTest.csv')
+        self.df = pd.read_csv('./data/clean_test.csv', index_col=0)
+        print(self.df.columns)
         
     def generateTransactions(self):
         num = random.randint(1, 10)
-        num = 1
+        # num = 1
         messages = self.df[self.index: self.index + num].to_dict(orient='records')
         self.index += num
         return messages
@@ -65,6 +66,6 @@ try:
         temp_data=dataGenerator.generateTransactions()
         myListener.send_data(temp_data)
         print(f'Sent {len(temp_data)} messages...')
-        time.sleep(1)
+        time.sleep(5)
 except KeyboardInterrupt:
     exit()

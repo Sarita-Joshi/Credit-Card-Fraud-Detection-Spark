@@ -2,6 +2,6 @@ C:/kafka/kafka_2.12-3.7.0/bin/windows/zookeeper-server-start.bat C:/kafka/kafka_
 
 C:/kafka/kafka_2.12-3.7.0/bin/windows/kafka-server-start.bat C:/kafka/kafka_2.12-3.7.0/config/server.properties
 
-C:/kafka/kafka_2.12-3.7.0/bin/windows/kafka-topics.bat --create --topic test-topic --bootstrap-server localhost:9092
+C:/kafka/kafka_2.12-3.7.0/bin/windows/kafka-topics.bat --create --topic transaction_data --bootstrap-server localhost:9092
 
 C:/kafka/kafka_2.12-3.7.0/bin/windows/kafka-console-consumer.bat --topic test-topic --from-beginning --bootstrap-server localhost:9092
