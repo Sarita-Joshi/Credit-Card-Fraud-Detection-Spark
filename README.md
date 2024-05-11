@@ -32,6 +32,33 @@ The simulator has certain pre-defined list of merchants, customers and transacti
 
 Datset size- 1GB
 
+## Info
+
+| #   | Column                 | Non-Null Count    | Dtype  |
+|-----|------------------------|-------------------|--------|
+| 0   | trans_date_trans_time  | 14814000 non-null | object |
+| 1   | cc_num                 | 14814000 non-null | int64  |
+| 2   | merchant               | 14814000 non-null | object |
+| 3   | category               | 14814000 non-null | object |
+| 4   | amt                    | 14814000 non-null | float64|
+| 5   | first                  | 14814000 non-null | object |
+| 6   | last                   | 14814000 non-null | object |
+| 7   | gender                 | 14814000 non-null | object |
+| 8   | street                 | 14814000 non-null | object |
+| 9   | city                   | 14814000 non-null | object |
+| 10  | state                  | 14814000 non-null | object |
+| 11  | zip                    | 14814000 non-null | int64  |
+| 12  | lat                    | 14814000 non-null | float64|
+| 13  | long                   | 14814000 non-null | float64|
+| 14  | city_pop               | 14814000 non-null | int64  |
+| 15  | job                    | 14814000 non-null | object |
+| 16  | dob                    | 14814000 non-null | object |
+| 17  | trans_num              | 14814000 non-null | object |
+| 18  | unix_time              | 14814000 non-null | int64  |
+| 19  | merch_lat              | 14814000 non-null | float64|
+| 20  | merch_long             | 14814000 non-null | float64|
+| 21  | is_fraud               | 14814000 non-null | int64  |
+
 
 
 
