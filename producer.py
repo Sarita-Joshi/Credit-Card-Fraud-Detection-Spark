@@ -20,8 +20,9 @@ class DataGenerator:
         return messages
 
 
-class MyListener:
+class MyProducer:
     topic_name = 'transaction_data'
+    
     def __init__(self):
         self.producer = KafkaProducer(
             bootstrap_servers=['localhost:9092'],
@@ -59,13 +60,13 @@ class MyListener:
 
 print("Starting app...")
 dataGenerator=DataGenerator()
-myListener=MyListener()
+MyProducer=MyProducer()
 
 try:
     while True:
         temp_data=dataGenerator.generateTransactions()
-        myListener.send_data(temp_data)
+        MyProducer.send_data(temp_data)
         print(f'Sent {len(temp_data)} messages...')
-        time.sleep(5)
+        time.sleep(3)
 except KeyboardInterrupt:
     exit()
