@@ -157,3 +157,9 @@ The trained model processes transactions from the Kafka queue in real-time to pr
 
 ### 6. Reporting
 A Streamlit dashboard displays real-time data, graphs, and analytics, pulling data directly from Cassandra.
+
+
+## Challenges
+1. System Compatibility issues
+2. Synthetic Data generation
+3. Cassandra setup - Memory allocation issues
