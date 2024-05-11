@@ -21,6 +21,20 @@ Each component plays a crucial role in the system:
 - **Data Storage**: Cassandra
 - **Data Reporting and Analytics**: Streamlit Python Live Dashboard
 
+## Data
+
+Dataset link - https://www.kaggle.com/datasets/kartik2112/fraud-detection
+
+Dataset generator - https://github.com/namebrandon/Sparkov_Data_Generation/
+
+The dataset was generated using Sparkov Data Generation | Github tool created by Brandon Harris.  
+The simulator has certain pre-defined list of merchants, customers and transaction categories. And then using a python library called "faker", and with the number of customers, merchants that you mention during simulation, an intermediate list is created.
+
+Datset size- 1GB
+
+
+
+
 ## System Architecture
 ![System Architecture](https://github.com/Sarita-Joshi/Credit-Card-Fraud-Detection-Spark/blob/develop/pictures/arch.png?raw=true)
 
