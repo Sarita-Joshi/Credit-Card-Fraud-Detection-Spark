@@ -1,0 +1,11 @@
+Start zookeeper
+C:/kafka/kafka_2.12-3.7.0/bin/windows/zookeeper-server-start.bat C:/kafka/kafka_2.12-3.7.0/config/zookeeper.properties
+
+Start kafka
+C:/kafka/kafka_2.12-3.7.0/bin/windows/kafka-server-start.bat C:/kafka/kafka_2.12-3.7.0/config/server.properties
+
+Create kafka topic
+C:/kafka/kafka_2.12-3.7.0/bin/windows/kafka-topics.bat --create --topic transaction_data --bootstrap-server localhost:9092
+
+Listen to Kafka topic
+C:/kafka/kafka_2.12-3.7.0/bin/windows/kafka-console-consumer.bat --topic test-topic --from-beginning --bootstrap-server localhost:9092
